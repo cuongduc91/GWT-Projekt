@@ -3,9 +3,10 @@
 :root {
   --header-bg-color: #eeeeee;
   --header-color: #01a9b4;
-  --nav-bg-color: #f9fd50;
+  --nav-second-color: #f9fd50;
+  --nav-bg-color: #edfffa;
   --nav-color: #438a5e;
-  --main-bg-color: #eeeeee;
+  --main-bg-color: #f7f7f7;
   --main-color: #07031a;
   --footer-bg-color: #031c0d;
   --footer-color: #f0fff0;
@@ -118,7 +119,7 @@ a {
 
 .header-link:link,
 .header-link:visited {
-  color: var(--nav-bg-color);
+  color: var(--nav-second-color);
 }
 
 #footer-grid {
@@ -138,7 +139,7 @@ a {
 
 .footer-decor {
   grid-area: footer-decor;
-  background-color: var(--nav-bg-color);
+  background-color: var(--nav-second-color);
 }
 
 .footer-info-box {
@@ -147,7 +148,7 @@ a {
 
 .email {
   padding: 1em;
-  background-color: var(--nav-bg-color);
+  background-color: var(--nav-second-color);
   color: var(--footer-bg-color);
 }
 
@@ -163,7 +164,7 @@ a {
 }
 
 i {
-  color: var(--nav-bg-color);
+  color: var(--nav-second-color);
 }
 
 .copyright {

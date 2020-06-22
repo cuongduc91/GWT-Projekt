@@ -29,6 +29,7 @@
           <li><a href="index.php">About us</a></li>
           <li><a href="product.php">Products</a></li>
           <li><a href="my-account.php">Your account</a></li>
+          <li><a href="sign-up.php">Register</a></li>
         </ul>
       </div>
     </nav>
