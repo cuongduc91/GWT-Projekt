@@ -3,9 +3,9 @@
 :root {
   --header-bg-color: #eeeeee;
   --header-color: #01a9b4;
-  --nav-bg-color: #f7fbe1;
+  --nav-bg-color: #f9fd50;
   --nav-color: #438a5e;
-  --main-bg-color: #f4f4f4;
+  --main-bg-color: #eeeeee;
   --main-color: #07031a;
   --footer-bg-color: #031c0d;
   --footer-color: #f0fff0;
@@ -23,7 +23,7 @@
 
 header {
   grid-area: head;
-  background-color: var(--header-bg-color);
+  background-color: var(--footer-bg-color);
   color: var(--header-color);
 }
 
@@ -114,7 +114,58 @@ a {
   width: fit-content;
 }
 
+
+
 .header-link:link,
 .header-link:visited {
-  color: var(--header-color);
+  color: var(--nav-bg-color);
+}
+
+#footer-grid {
+  display: grid;
+  grid-template-columns: 60% 35% 5%;
+  grid-template-areas: "footer-info footer-social footer-decor";
+}
+
+.footer-info {
+  grid-area: footer-info;
+
+}
+
+.footer-social {
+  grid-area: footer-social;
+}
+
+.footer-decor {
+  grid-area: footer-decor;
+  background-color: var(--nav-bg-color);
+}
+
+.footer-info-box {
+  padding: 2.5em;
+}
+
+.email {
+  padding: 1em;
+  background-color: var(--nav-bg-color);
+  color: var(--footer-bg-color);
+}
+
+.address {
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.footer-social-box {
+  padding: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  color: var(--nav-bg-color);
+}
+
+.copyright {
+  text-align: center;
 }
