@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+
+:root {
+  --header-bg-color: #eeeeee;
+  --header-color: #01a9b4;
+  --nav-bg-color: #f7fbe1;
+  --nav-color: #438a5e;
+  --main-bg-color: #f4f4f4;
+  --main-color: #07031a;
+  --footer-bg-color: #031c0d;
+  --footer-color: #f0fff0;
+}
+
+#Grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "head head head head"
+    "nav main main main"
+    "foot foot foot foot";
+  /* max-width: 60em; */
+}
+
+header {
+  grid-area: head;
+  background-color: var(--header-bg-color);
+  color: var(--header-color);
+}
+
+nav {
+  grid-area: nav;
+  background-color: var(--nav-bg-color);
+  color: var(--nav-color);
+  height: 100vh;
+}
+
+main {
+  grid-area: main;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  height: 100vh;
+}
+
+footer {
+  grid-area: foot;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-color);
+}
+
+nav ul li {
+  width: 50%;
+  list-style-type: none;
+  padding: .5em;
+}
+
+nav ul li a {
+  color: var(--nav-color);
+}
+
+nav ul li a:link,
+a:visited {
+  color: var(--main-color);
+  transition: all 0.2s;
+}
+
+nav ul li a:active {
+  color: #e7305b;
+}
+
+nav ul li a:hover {
+  color: var(--footer-color);
+}
+
+nav ul li:hover {
+  text-align: center;
+  background-color: #fb7813;
+  border-radius: .5em;
+  color: var(--footer-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-baloo {
+  font-family: "Baloo Thambi 2";
+}
+
+.font-rale {
+  font-family: "Raleway";
+}
+
+.font-rubik {
+  font-family: "Rubik";
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.header-link:link,
+.header-link:visited {
+  color: var(--header-color);
+}
