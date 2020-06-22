@@ -170,3 +170,13 @@ i {
 .copyright {
   text-align: center;
 }
+
+#register-main {
+  padding: 2em;
+}
+
+.register {}
+
+.form-group {
+  margin: auto;
+}
