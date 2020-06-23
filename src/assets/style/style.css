@@ -175,8 +175,49 @@ i {
   padding: 2em;
 }
 
-.register {}
-
 .form-group {
+  margin: 0 auto;
+}
+
+form {
+  width: 25em;
+  /* display: flex;
+  justify-content: space-between; */
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.form-box {
+  margin-bottom: .5em;
+  display: flex;
+  justify-content: space-between;
+  padding: .5em;
+}
+
+.form-box input {
+  width: 60%;
+  border-radius: 5px;
+  height: 1.5em;
+}
+
+
+.form-term-box {
+  margin-bottom: 1em;
+}
+
+.btn {
+  text-align: center;
+  color: var(--footer-color);
+  background-color: #02ac51;
+  border-radius: 3em;
+  border: 3px solid #02ac51;
   margin: auto;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.btn:link,
+.btn:visited {
+  color: var(--footer-bg-color);
 }
