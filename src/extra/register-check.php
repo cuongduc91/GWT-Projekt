@@ -35,7 +35,8 @@ if(isset($_POST['sign_up'])){
     echo "<script>window.open('sign-up.php','_self')</script>";
     exit();
   }
-  $check_name = "select * from user where user_name = 'user_name'";
+  $name_ = strtolower($name);
+  $check_name = "select * from user where user_name = '$name_'";
   $run_user_name = mysqli_query($con, $check_name);
   $row_name_available = mysqli_num_rows($run_user_name);
   if($row_name_available==1){
