@@ -1,5 +1,7 @@
 # Project-2020
 
+A Project 🚀 only for the subject, namely Fundamental Web-Technique, applying Docker containers, PHP, MySQL, HTML, CSS.
+
 # Docker
 
 - Download and Install [Docker](https://www.docker.com)
@@ -17,23 +19,26 @@
 
 - Download and install [DBeaver](https://dbeaver.io) as GUI configuration to the MySQL database
 - Configuration as MYSQL_USER/MYSQL_PASSWORD in development.env file on port 3320
+- There is a button (+ 🔌) --> select MySQL.
+- Execute the scripts.sql in the new MySQL editor to create a table for storing users
 
 # Environment file
 
 - Create the development.env file in the main folder.
-- Env. Parameters: MYSQL_USER, MYSQL_PASSWORD, MYSQL_ROOT_PASSWORD...
+- Env. Parameters: MYSQL_USER, MYSQL_PASSWORD, MYSQL_ROOT_PASSWORD (optional)
 
 # www
 
 - As the php dockerfile folder running on localhost:8010
 
-# Important!
-
-## Granting privileges to another user
+# Note for granting privileges to another user
 
 ## In terminal:
 
 ```
+#indentify the docker ID
+docker ps
+
 docker exec -it <container name or id>   bash
 mysql -u root -p
 //loging with root password
