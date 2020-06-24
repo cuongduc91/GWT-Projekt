@@ -3,7 +3,6 @@
 include ("extra/connection.php");
 
 if(isset($_POST['sign_up'])){
-  
   $name=htmlentities(mysqli_real_escape_string($con,$_POST['user_name']));
   $pass=htmlentities(mysqli_real_escape_string($con,$_POST['user_pass']));
   $re_pass=htmlentities(mysqli_real_escape_string($con,$_POST['user_repass']));

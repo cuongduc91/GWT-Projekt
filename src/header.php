@@ -23,7 +23,7 @@
     <!-- !header -->
     <!-- navigation -->
     <nav>
-      <div style="margin-top:2em;" class="navigation font-rale">
+      <div style="margin-top:2em;" class="font-rale">
         <h2  class="fit" style="margin-left:1em;">Navigation</h2>
         <ul class="nav">
           <li><a href="index.php">About us</a></li>
@@ -32,5 +32,6 @@
           <li><a href="sign-up.php">Register</a></li>
         </ul>
       </div>
+      <div class="decor-div"></div>
     </nav>
     <!-- !navigation -->
