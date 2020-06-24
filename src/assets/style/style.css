@@ -10,6 +10,9 @@
   --main-color: #07031a;
   --footer-bg-color: #031c0d;
   --footer-color: #f0fff0;
+  --btn-color: #75daad;
+  --btn-second-color: #d1f5d3;
+  --form-color: #edffea;
 }
 
 #Grid {
@@ -20,18 +23,17 @@
     "nav main main main"
     "foot foot foot foot";
   /* max-width: 60em; */
+  background-color: #b6eb7a;
 }
 
 header {
   grid-area: head;
   background-color: var(--footer-bg-color);
-  color: var(--header-color);
 }
 
 nav {
   grid-area: nav;
   background-color: var(--nav-bg-color);
-  color: var(--nav-color);
   height: 100vh;
 }
 
@@ -54,18 +56,11 @@ nav ul li {
   padding: .5em;
 }
 
-nav ul li a {
-  color: var(--nav-color);
-}
 
 nav ul li a:link,
 a:visited {
   color: var(--main-color);
   transition: all 0.2s;
-}
-
-nav ul li a:active {
-  color: #e7305b;
 }
 
 nav ul li a:hover {
@@ -176,16 +171,21 @@ i {
 }
 
 .form-group {
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 form {
   width: 25em;
-  /* display: flex;
-  justify-content: space-between; */
-  border: 1px solid;
+  background-color: var(--form-color);
+  border: 1px solid #eeeeee;
   border-radius: 10px;
   padding: 2em;
+  /* top: 50%;
+  left: 50%;
+  transition: translate(-50%, -50%); */
+
 }
 
 .form-box {
@@ -198,20 +198,24 @@ form {
 .form-box input {
   width: 60%;
   border-radius: 5px;
-  height: 1.5em;
+  height: 2em;
 }
-
 
 .form-term-box {
   margin-bottom: 1em;
 }
 
+a[href="http://corndog.io"],
+a[href="https://terriblecolors.com"] {
+  color: blue;
+}
+
 .btn {
   text-align: center;
   color: var(--footer-color);
-  background-color: #02ac51;
+  background-color: var(--btn-color);
   border-radius: 3em;
-  border: 3px solid #02ac51;
+  border: 3px solid var(--btn-color);
   margin: auto;
   text-decoration: none;
   padding: 1em;
@@ -219,5 +223,12 @@ form {
 
 .btn:link,
 .btn:visited {
+  color: var(--footer-bg-color);
+  transition: all .4s;
+}
+
+.btn:hover {
+  background-color: var(--btn-second-color);
+  /* border: 3px solid var(--btn-second-color); */
   color: var(--footer-bg-color);
 }
