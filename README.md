@@ -21,7 +21,7 @@ A Project 🚀 only for the subject, namely Fundamental Web-Technique, applied D
 - Download and install [DBeaver](https://dbeaver.io) as GUI configuration to the MySQL database
 - Configuration as MYSQL_USER/MYSQL_PASSWORD/MYSQL_ROOT_PASSWORD in development.env file on port 3320 (/extra/connection.php)
 - There is a button (+ 🔌) --> select MySQL.
-- Execute the scripts.sql in the new MySQL editor to create a table for storing users
+- Execute the db/script/cripts.sql in the new MySQL editor to create a table for storing users
 
 # Environment file
 
