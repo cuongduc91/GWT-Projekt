@@ -47,8 +47,19 @@ include ("extra/connection.php");
       echo "<script>window.open('sign-up.php','_self')</script>";
       exit();
     }
-
-    $statement = $con->prepare("insert into mobileshop.user (user_name, user_pass, user_email) values (:name, :pass, :email)");
+    try {
+      $insert_user_sql = "insert into mobileshop.user (user_name, user_pass, user_email) values (:name, :pass, :email)";
+      $insert_user_stmt = $con->prepare($insert_user_sql);
+      $insert_user_stmt->bindParam(':name',$name);
+      $insert_user_stmt->bindParam(':pass',$pass);
+      $insert_user_stmt->bindParam(':email',$email);
+      $insert_user_stmt->execute();
+      echo "<script>alert('Congratulations $name, your account has been created successfully.')</script>";
+      echo "<script>window.open('index.php','_self')</script>";
+    } catch(PDOException $e) {
+      echo "<script>alert('Registration failed, try again!')</script>";
+      echo "<script>window.open('sign-up.php','_self')</script>";
+    }
   }
 
 ?>
