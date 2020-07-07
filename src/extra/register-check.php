@@ -36,6 +36,18 @@ include ("extra/connection.php");
       echo "<script>window.open('sign-up.php','_self')</script>";
       exit();
     }
+    $name_ = strtolower($name);
+    $check_name_sql = "select * from mobileshop.user where user_name = :name";
+    $check_name_stmt = $con->prepare($check_name_sql);
+    $check_name_stmt->bindParam(':name', $name);
+    $check_name_stmt->execute();
+    $row_name_available=$check_name_stmt->rowCount();
+    if($row_name_available==1){
+      echo "<script>alert('User name has already existed, please try another!')</script>";
+      echo "<script>window.open('sign-up.php','_self')</script>";
+      exit();
+    }
+
     $statement = $con->prepare("insert into mobileshop.user (user_name, user_pass, user_email) values (:name, :pass, :email)");
   }
 
