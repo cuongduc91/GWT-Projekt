@@ -28,7 +28,7 @@
                   I accept the 
                   <a href="http://corndog.io">Terms of Use</a> 
                   &amp; 
-                  <a href="https://terriblecolors.com">Privacy Policy</a>
+                  <a href="http://www.fallingfalling.com/">Privacy Policy</a>
                 </div>
                 <div class="form-box" style="margin-top:2em;">
                   <button type="submit" name="sign_up" class="btn font-rale font-size-16">Sign up now</button>
